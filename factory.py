@@ -1,3 +1,4 @@
+# Creational Patterns
 # Factory Pattern
 # Imagine you’re running a bakery. Depending on the order, you might create a cake, a muffin, or a loaf of bread.
 # The Factory pattern works the same way: it provides a single interface to create objects, but the actual object created depends on the input.

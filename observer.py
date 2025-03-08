@@ -1,3 +1,4 @@
+# Behavioral Patterns
 # Observer / PubSub Pattern
 # Picture a social media app. You follow your favorite influencer, and every time they post, you get notified.
 # The Observer pattern works similarly: objects (observers) subscribe to another object (subject) and get updates when the subject changes.
