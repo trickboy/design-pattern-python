@@ -19,7 +19,7 @@ class Iterator:
         return item
 
 
-collection = [1, 2, 3, 4]
+collection = [1, "two", 3, "four", 5, "six",7,"eight",9,"ten"]
 iterator = Iterator(collection)
 while iterator.has_next():
     print(iterator.next())
