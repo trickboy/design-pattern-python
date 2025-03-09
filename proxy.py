@@ -20,7 +20,6 @@ class CollegeProxy:
             self.college = College()
             self.college.studyInCollege()
         else:
-
             # Otherwise, don't instantiate the college object.
             print("Your fee balance is greater than 500, first pay the fee")
 
