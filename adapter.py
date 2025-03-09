@@ -4,6 +4,7 @@
 
 class Legacy:
     def __init__(self):
+        self.data = "legacy data"
         print("Access Legacy System")
 
     def get_data(self):
@@ -11,6 +12,7 @@ class Legacy:
 
 class  NewSystem:
     def __init__(self):
+        self.data = "new data"
         print("Access New System")
 
 
