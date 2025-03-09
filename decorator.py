@@ -38,3 +38,27 @@ def slow_function():
 
 # Usage
 slow_function()
+
+
+# Decorating Class Methods
+def requires_authentication(func):
+    def wrapper(self, *args, **kwargs):
+        if not self.authenticated:
+            raise PermissionError("User is not authenticated")
+        return func(self, *args, **kwargs)
+    return wrapper
+
+class User:
+    def __init__(self, authenticated=False):
+        self.authenticated = authenticated
+
+    @requires_authentication
+    def view_dashboard(self):
+        return "Welcome to your dashboard!"
+
+# Usage
+user = User(authenticated=True)
+print(user.view_dashboard())  # Works fine
+
+unauthenticated_user = User(authenticated=False)
+print(unauthenticated_user.view_dashboard()) # Raises PermissionError
